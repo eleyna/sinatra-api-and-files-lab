@@ -1,0 +1,9 @@
+<h2>Your Favorite Moives:</h2>
+<ul>
+<% @favorite_movie_list.each do |movie| %>
+  <li><a href="/movie_info"><%=  movie %></a></li>
+<% end %>
+<% @favorite_movie_list.close %>
+</ul>
+
+<a href="/new_movie">Add a new movie to your favorites list</a>
